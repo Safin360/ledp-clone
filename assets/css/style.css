@@ -1,0 +1,405 @@
+/***************************************>
+Project Name : Sceond Project;
+Project Author : Sahab Uddin Riyaj;
+Project Date :13-04-2019AD.
+Email : sahabuddinriyaj984@gmail.com;
+1  	Header
+2. 	Slider
+3. 	Service
+4.	About
+5.	Footer
+< *************************************/
+/*font family Start*/
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext');
+/*font-family: 'Raleway', sans-serif;*/
+/*font-family End*/
+/*************************************************
+					Base Css Start
+**************************************************/
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background-repeat: no-repeat;
+	background-image: linear-gradient(#2493cb,#9fd9e5,#2493cb);
+	font-family: 'Raleway', sans-serif;
+}
+ul{
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+	padding: 0;
+	margin: 0;
+	color: #fff;
+}
+/* width */
+::-webkit-scrollbar{
+  width: 20px;
+  padding: 3px;
+}
+
+/* Track */
+::-webkit-scrollbar-track{
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+  padding: 3px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb{
+  box-shadow: inset 0 0 5px grey;
+  background: red; 
+  border-radius: 10px;
+  padding: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover{
+  background: #b30000; 
+}
+::-moz-scrollbar{
+  width: 20px;
+  padding: 3px;
+}
+
+/* Track */
+::-moz-scrollbar-track{
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+  padding: 3px;
+}
+ 
+/* Handle */
+::-moz-scrollbar-thumb{
+  box-shadow: inset 0 0 5px grey;
+  background: red; 
+  border-radius: 10px;
+  padding: 3px;
+}
+
+/* Handle on hover */
+::-moz-scrollbar-thumb:hover{
+  background: #b30000; 
+}
+/*************************************************
+					Base Css End
+**************************************************/
+/*************************************************
+					Common Css Start
+**************************************************/
+.container{
+margin: 0px 80px;
+}
+
+/*************************************************
+					Common Css End
+**************************************************/
+/*************************************************
+					Header Css Start
+**************************************************/
+header{
+padding: 0;
+margin: 0;
+padding: 20px 0px;
+color: #fff;
+height: 50px;
+width: 100%;
+}
+.header-main{
+display: flex;
+justify-content: space-between;
+}
+.header-icon h2{
+	line-height: 50px;
+color: #fff;
+}
+.navbar ul{
+line-height: 50px;
+display: flex;
+}
+
+.navbar ul li a{
+	padding: 35px 20px;
+	font-weight: 900;
+	transition: 0.5s all ease-in;
+}
+.navbar ul li a:hover{
+	color: #e74c3c;
+	transition: 0.5s all ease-in;
+}
+.navbar ul li a.active{
+color: #e74c3c;
+transition: 0.5s all ease-in;
+}
+.navbar ul li a.active:hover{
+	color: #e74c3c;
+	transition: 0.5s all ease-in;
+}
+/*************************************************
+					Header Css End
+**************************************************/
+/*************************************************
+					Slider Css Start
+**************************************************/
+.slider-main{
+	padding: 0;
+	margin: 0;
+	margin-top: 80px;
+	height: 600px;
+	width: 100%;
+}
+.slider{
+	background:url(../image/background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+}
+.slider-text{
+	text-align: center;
+	color: #fff;
+	padding-top: 120px;
+}
+.slider-text h1{
+	color: #fff;
+	padding-bottom: 5px;
+	text-shadow: 1px 2px #ff4f81;
+}
+.slider-text h1 span{
+	color: #2bbbf0;
+}
+.slider-text p{
+	font-size: 10px;
+	color: #fff;
+	padding-top: 10px;
+	padding-bottom: 30px;
+	font-weight: 300;
+	text-shadow: 1px 2px #0000ff;
+}
+.slider-text input[type=submit]{
+	height: 30px;
+	width: 150px;
+	border:none;
+	color: #fff;
+	font-weight: 700;
+	border-radius: 25px;
+	background: #2bbbf0;
+	transition: 0.5s all ease-in;
+}
+.slider-text input[type=submit]:hover{
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #e74c3c;
+	transition: 0.5s all ease-in;
+}
+/*************************************************
+					Slider Css End
+**************************************************/
+/*************************************************
+					Service Css Start
+**************************************************/
+.service-main{
+	height: 520px;
+	width: 100%;
+	background: #fff;
+}
+.service-main h1{
+	padding-top: 20px;
+	text-align: center;
+	color: #000;
+	padding-bottom: 3%;
+}
+.service-all{
+	height: 260px;
+	width: 100%;
+	display: flex;
+	padding-top: 10%;
+	border-top: 2px solid #ddd;
+}
+.service-main input[type=submit]{
+	height: 30px;
+	width: 150px;
+	border:none;
+	color: #fff;
+	font-weight: 700;
+	border-radius: 25px;
+	background: #2bbbf0;
+	transition: 0.5s all ease-in;
+	margin-left: 44%;
+	z-index: 100;
+}
+.service-main input[type=submit]:hover{
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #e74c3c;
+	transition: 0.5s all ease-in;
+}
+.service1{
+	margin-left: 70px;
+	height: 250px;
+	width: 24%;
+}
+.service2,.service3,.service4{
+	margin-left: 2%;
+	height: 250px;
+	width: 20%;
+}
+.service4{
+	margin-right: 70px;
+}
+.service1 h1,.service2 h1,.service3 h1,.service4 h1{
+	color: #2bbbf0;
+	text-align: left;
+	padding-bottom: 5%;
+	transition: 0.5s all ease-in;
+	animation: riyaj 15s linear infinite;
+}
+@keyframes riyaj{
+	0%{transition: 0.5s all ease-in;
+		color: #0000ff;
+		padding-left: 0px;
+	}
+	25%{transition: 0.5s all ease-in;
+		color: #ff0000;
+		padding-left: 60px;
+	}
+	75%{transition: 0.5s all ease-in;
+		color: #008000;
+		padding-left: 120px;
+	}
+	50%{
+		color: #ff4f81;
+		padding-left: 80;
+	}
+	25%{transition: 0.5s all ease-in;
+		color: #ff0000;
+		padding-left: 60px;
+	}
+	0%{transition: 0.5s all ease-in;
+		color: #ffff00;
+		padding-left: 0px;
+	}
+}
+.service1 h4,.service2 h4,.service3 h4,.service4 h4{
+	color: #000;
+	text-align: left;
+	padding-bottom: 5%;
+}
+.service1 p,.service2 p,.service3 p,.service4 p{
+	color: #000;
+	text-align: left;
+	padding-bottom: 5%;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+/*************************************************
+					Service Css End
+**************************************************/
+/*************************************************
+					About Css Start
+**************************************************/
+.about-main{
+	height: 500px;
+	width:100%;
+	background-color: #fff;
+	position: relative;
+	overflow: hidden;
+}
+.about{
+	padding-top: 130px;
+	padding-left: 8%;
+	height: 50%;
+	width: 40%;
+}
+.about h4{
+	padding-bottom: 20px;
+	font-weight: 700;
+}
+.about p{
+	padding-bottom: 20px;
+	font-weight: 300;
+}
+.about input[type=submit]{
+	height: 30px;
+	width: 150px;
+	border:none;
+	color: #fff;
+	font-weight: 700;
+	border-radius: 25px;
+	background: #2bbbf0;
+	transition: 0.5s all ease-in;
+	margin-left: 10%;
+}
+.about input[type=submit]:hover{
+	color: #000;
+	background-color: #fff;
+	border: 1px solid #e74c3c;
+	transition: 0.5s all ease-in;
+}
+
+.shaping{
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#2bbbf0;
+    transform: skewX(-60deg);
+    transform: skewY(-30deg);
+    transform-origin: bottom right;
+	
+}
+.laptop{
+	height: 270px;
+	width: 380px;
+	position: absolute;
+	top: 15%;
+	left: 50%;
+}
+.laptop img{
+	height: 100%;
+	width: 100%;
+}
+/*************************************************
+					About Css End
+**************************************************/
+/*************************************************
+					Footer Css Start
+**************************************************/
+.footr-main{
+	background-color: #000;
+	height: 70px;
+	width: 100%;
+	margin-bottom: 80px;
+}
+.footer-cart{
+	line-height: 70px;
+	display: flex;
+	color: #fff;
+}
+.footer-cart a{
+	font-weight: 900;
+	color: #e74c3c;
+	transition: 0.5s all ease-in;
+}
+.footer-cart a:hover{
+	font-weight: 900;
+	color: #fff;
+	transition: 0.5s all ease-in;
+}
+.footer-cart img{
+	padding-left: 18%;
+	height: 50px;
+	width: 350px;
+	padding-top: 1.5%;
+}
+/*************************************************
+					Footer Css End
+**************************************************/
